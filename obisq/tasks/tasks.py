@@ -2,7 +2,7 @@ from celery.task import task
 from dockertask import docker_task
 from subprocess import call,STDOUT
 import requests
-
+import obisq
 #Default base directory 
 #basedir="/data/static/"
 
@@ -16,3 +16,6 @@ def add(x, y):
     """
     result = x + y
     return result
+
+def reload():
+    reload(obisq)
