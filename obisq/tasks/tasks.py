@@ -17,5 +17,6 @@ def add(x, y):
     result = x + y
     return result
 
+@task()
 def reload():
     reload(obisq)
